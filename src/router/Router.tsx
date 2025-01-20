@@ -1,5 +1,5 @@
 import React from "react";
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {HashRouter, Route, Routes} from "react-router-dom";
 import {NavBar} from "../components/NavBar";
 import {AllCatsScreen} from "../screens/AllCatsScreen";
 import {FavoriteCatsScreen} from "../screens/FavoriteCatsScreen";
@@ -8,7 +8,7 @@ import {FavoriteCatsScreen} from "../screens/FavoriteCatsScreen";
 export const Router = () => {
 
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
                 <Route
                     path={'/'}
@@ -24,6 +24,6 @@ export const Router = () => {
                     />
                 </Route>
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
