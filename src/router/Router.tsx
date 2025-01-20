@@ -15,7 +15,7 @@ export const Router = () => {
                     element={<NavBar />}
                 >
                     <Route
-                        path={'/'}
+                        index
                         element={<AllCatsScreen />}
                     />
                     <Route
